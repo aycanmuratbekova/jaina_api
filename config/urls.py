@@ -19,6 +19,7 @@ urlpatterns = [
     # path("users/", include("jaina_almaz.users.urls", namespace="users")),
     # path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("", include("api.urls")),
     path("api/", include("api.urls")),
     # path("web/", include("web.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
